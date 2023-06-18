@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+                                 //bài 1
+
+//let arr2D =[
+//        [1,2,3,4],
+ //       [5,6,7,8],
+ //       [9,10,11,12],
+ //       [13,14,15,16]
+//]
+                                 //cách 1
+ //for(let i=0;i<arr2D.length;i++){
+  // for(let j=0;j<arr2D[i].length;j++){
+   //  console.log(arr2D[i][j]);
+  // }
+ //}
+                                  //cách 2
+ // for (let i in arr2D){
+  //  console.log('row '+ i)
+ //   for(let j in arr2D[i]){
+  //    console.log(arr2D[i][j]);
+  //  }
+ // }
+
+
+                                   //bài 2
+//let arr=['c','s','c','2','6','1'];
+//arr.reverse();
+//console.log(arr.join(""));
+
+                               //bài 3
+//let arr = [1,2,'b','a',4];
+//let result=0;
+//for(let i=0;i<5;i++){
+ //if (typeof(arr[i])==="number"){
+   // result +=1;
+  //}
+//}
+//document.write('Số kí tự số trong mảng là '+ result)
+
+                               //bài 4
+  // let str= "Xin chào các bạn";
+  // let arr = str.split(" ");
+  // let arrCount = arr.length;
+  // console.log('Số từ trong chuỗi là ' +arrCount)
+                                 //bài 5
+//let str1=prompt('Nhập vào chuỗi 1');
+//let str2=prompt('Nhập vào chuỗi 2');
+//let flag=false;
+//if (str1===str2){
+  //flag = true;
+//}
+//if(flag){
+ // alert('2 chuỗi giống nhau');
+//}else{
+ // alert('2 chuỗi không giống nhau');
+//}
+                                 //bài 6
+  let n = +prompt ('Nhập độ dài mảng') ;
+  let arr=[];
+  for (let i=0;i<n;i++){
+      let a =  prompt('Nhập phần tử tại vị trí '+ i);
+      arr.push(a);
+  }
+  for (let j = 0;j<arr.length;j++){
+      if (arr[j] === '-' ){
+          arr[j] = '_'
+      }
+  }
+  console.log(arr)
+
+
+
+
+</script>
+</html>

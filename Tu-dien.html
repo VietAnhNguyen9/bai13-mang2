@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Nhập từ:</p>
+<input type="text" id="demo">
+<button onclick="meet()">Dịch</button>
+<br>
+<p>Nghĩa là:</p>
+<div id="a"></div>
+</body>
+<script>
+function meet(){
+  let arr_eng=['table','smartphone','number','pen']
+  let arr_vn=['bàn','điện thoại thông minh','số','bút']
+  let index_eng=0;
+  let str= document.getElementById('demo').value;
+  let result=[];
+  for(let i=0;i< arr_eng.length;i++){
+    if (str === arr_eng[i]){
+      index_eng = i;
+    }
+    for(let j=0;j<arr_vn.length;j++){
+      if(index_eng===j){
+        result = arr_vn[j]
+      }
+    }
+  }
+  document.getElementById('a').innerHTML = result;
+
+
+
+
+}
+
+
+
+
+</script>
+</html>
